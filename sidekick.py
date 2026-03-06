@@ -79,14 +79,14 @@ class Sidekick:
     With this feedback, please continue the assignment, ensuring that you meet the success criteria or have a question for the user."""
 
         # Add in the system message
-
-        found_system_message = False
+        found_system_message = False 
         messages = state["messages"]
+        '''
         for message in messages:
             if isinstance(message, SystemMessage):
                 message.content = system_message
                 found_system_message = True
-
+        '''
         if not found_system_message:
             messages = [SystemMessage(content=system_message)] + messages
 

@@ -32,7 +32,8 @@ def push(text: str):
 
 
 def get_file_tools():
-    toolkit = FileManagementToolkit(root_dir="sandbox")
+    #toolkit = FileManagementToolkit(root_dir="sandbox")
+    toolkit = FileManagementToolkit(root_dir="/Users/shashank/Documents")
     return toolkit.get_tools()
 
 
